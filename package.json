@@ -1,0 +1,13 @@
+{
+  "name": "full-stack-js-test",
+  "scripts": {
+    "payment-api": "cd payment-api && npm start",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm start",
+    "start": "concurrently \"npm run payment-api\" \"npm run backend\"  \"npm run frontend\"" 
+   },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.3.1"
+  }
+}
