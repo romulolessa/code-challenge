@@ -1,5 +1,6 @@
 var createError = require("http-errors");
 var express = require("express");
+const cors = require('cors')
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
@@ -7,6 +8,7 @@ var apiRouter = require("./routes/api");
 var indexRouter = require("./routes/index");
 
 var app = express();
+app.use(cors());
 
 app.use(logger("dev"));
 app.use(express.json());

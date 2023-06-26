@@ -6,7 +6,7 @@ router.get("/", function (req, res) {
 });
 
 router.get("/payments", function (req, res) {
-  fetch(`http://localhost:${process.env.PAYMENT_API_PORT || 3001}/api/payments`)
+  fetch(`http://localhost:${process.env.PAYMENT_API_PORT || 3002}/api/payments`)
     .then((response) => response.json())
     .then((result) => {
       res.send(result);
@@ -17,7 +17,7 @@ router.get("/payments", function (req, res) {
 });
 
 router.post("/payments", function (req, res) {
-  fetch(`http://localhost:${process.env.PAYMENT_API_PORT || 3001}/api/payments`, {
+  fetch(`http://localhost:${process.env.PAYMENT_API_PORT || 3002}/api/payments`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
