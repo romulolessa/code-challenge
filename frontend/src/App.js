@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PaymentCreate from "./routes/payment-create.js";
 import PaymentsList from "./routes/payments-list.js";
 
+
 const routes = [
   {
     path: "/",
