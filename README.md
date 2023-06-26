@@ -59,19 +59,19 @@ To ensure clarity, avoid unnecessary file and code movements, enabling reviewers
 
 ### Tasks:
 
-- Fetch and display the list of existing payments
+- [x] Fetch and display the list of existing payments
 
 Update the PaymentsList page to retrieve and display the current list of payments from the payment-api. The payment-api already provides some example payments by default.
 
-- Handle form submission to create new payments
+- [x] Handle form submission to create new payments
 
 Implement the form on the PaymentCreate page to collect data and create a new payment based on the entered information. All payment details entered by the user should be required. After successful submission, redirect the browser to the list page where the new valid payment will be visible.
 
-- Secure the payment-api with an API key
+- [] Secure the payment-api with an API key
 
 Ensure that only authorized requests have access to the internal payment-api. All requests to the payment-api should include a valid API key. You can configure the API key as a static or hard-coded value, and using an environment variable would be a suitable approach.
 
-- Assign a unique id to each new payment  
+- [x] Assign a unique id to each new payment  
 
 Generate a unique ID for each newly created payment. The ID should meet the following criteria:
 
